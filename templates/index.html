@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet API IA - ESILV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #ffffff; /* Couleur de fond de l'en-tête mise à blanc */
+            color: #333;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 2px solid #ce1052; /* Ligne de séparation en rose */
+        }
+
+        .header-content {
+            margin-bottom: 1rem;
+        }
+
+        header img {
+            max-width: 200px;
+        }
+
+        .group-members {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 0.5rem;
+            color: #ce1052;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 1rem;
+        }
+
+        li {
+            background-color: #f8f8f8;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border-left: 5px solid #ce1052;
+        }
+
+        strong {
+            color: #004a99;
+        }
+
+        a {
+            color: #ce1052;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ce1052;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://www.esilv.fr/ecole-ingenieur/wp-content/uploads/2020/09/logo-esilv-ecole-ingenieur.png" alt="Logo ESILV">
+            <h1>Projet API pour l'aperçu des nouvelles IA</h1>
+        </div>
+        <div class="group-members">
+            <h2>Membres du groupe : Karl AVODO & Tim L</h2>
+        </div>
+    </header>
+    <main>
+        <section class="project-objective">
+            <h3>Objectif</h3>
+            <p>Ce projet consiste à créer une API fournissant des nouvelles et informations relatives à l'intelligence artificielle, en particulier en utilisant le site <strong>blog-ia.com</strong> comme source principale.</p>
+        </section>
+        <section class="api-endpoints">
+            <h3>Endpoints</h3>
+            <ul>
+                <li><strong>/get_data</strong> : Récupère une liste d'articles du site sélectionné, avec les détails comme le titre et la date de publication.</li>
+                <li><strong>/articles</strong> : Affiche les informations sommaires des articles sans inclure le contenu complet.</li>
+                <li><strong>/article/&lt;number&gt;</strong> : Renvoie le contenu complet de l'article spécifié par son numéro.</li>
+                <li><strong>/ml ou /ml/&lt;number&gt;</strong> : Applique un script de machine learning, tel que l'analyse des sentiments, sur les articles.</li>
+            </ul>
+        </section>
+        <section class="usage-example">
+            <h3>Exemples d'utilisation</h3>
+            <p>Les endpoints peuvent être utilisés pour accéder aux données, analyser le contenu des articles, et extraire des insights pertinents en intelligence artificielle.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ESILV. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,29 +1,50 @@
-# Esilv_Api_Project
+# Projet API ESILV - Vue d'ensemble des nouvelles sur l'IA
 
-### Project
-**Create an API for AI News Overview**
+## Projet
+**Créer une API pour une vue d'ensemble des nouvelles sur l'Intelligence Artificielle (IA)**
 
-This project involves creating an API that provides news related to Artificial Intelligence (AI). Each group will select an AI-related site (e.g., OpenAI blog) as their source.
+Ce projet implique la création d'une API fournissant des nouvelles liées à l'Intelligence Artificielle (IA). Notre groupe a sélectionné un site renommé dans le domaine de l'IA comme source.
 
-### Objective
+## Objectif
 
-The goal is to fetch information from the chosen site, either by scraping or through an existing API. You will create several endpoints for different purposes:
+L'objectif est de récupérer des informations du site choisi, soit par scraping, soit via une API existante. Nous avons créé plusieurs endpoints à des fins différentes :
 
-    - /get_data: Fetches a list of articles from the site. Retrieving 5 articles might be sufficient.
-    - /articles: Displays information about the articles, including the article number, title, publication date, etc., but not the content itself.
-    - /article/<number>: Accesses the content of a specified article.
-    - /ml or /ml/<number>: Executes a machine learning script. Depending on the desired goal, it applies to either all articles or a single one. For example, sentiment analysis.
+- `/get_data`: Récupère une liste d'articles du site.
+- `/articles`: Affiche des informations sur les articles, y compris le numéro de l'article, le titre, la date de publication.
+- `/article/<number>`: Accède au contenu d'un article spécifié.
+- `/ml/<number>`: Effectue une analyse de sentiment sur le contenu d'un article spécifié.
 
-You can choose website about many subject like:
+## Mise en œuvre et déploiement
 
-    - Updates on new AI tools.
-    - News about image generation.
-    - Information on new models.
-    - Research papers, such as those from ArXiv or Google DeepMind.
+Le projet a été déployé sur AWS Elastic Beanstalk, ce qui permet d'accéder à l'API publiquement. Voici le lien pour accéder à l'API :
 
-### Process
+[http://esilv-tim-karl-project-env.us-east-2.elasticbeanstalk.com/](http://esilv-tim-karl-project-env.us-east-2.elasticbeanstalk.com/)
 
-    1. Each group should create a branch named after the names of the group members.
-    2. Inside the branch, create a working directory named after the chosen site.
-    3. Add a file named composition.txt that lists the members of the group.
-    4. Add a section below these rules to explain your project, describe the created endpoints and their uses, and provide examples.
+## Utilisation de l'API
+
+Pour interagir avec l'API, utilisez les endpoints suivants :
+
+- **Récupérer les données des articles** :
+GET /get_data
+
+- **Afficher un résumé des articles** :
+
+GET /articles
+
+
+- **Accéder au contenu d'un article spécifique** :
+GET /article/1
+
+
+- **Analyser le sentiment d'un article** :
+GET /ml/1
+
+## Équipe
+
+Ce projet a été réalisé par :
+
+- Karl AVODO
+- Tim L
+
+
+
